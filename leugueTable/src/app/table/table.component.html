@@ -1,1 +1,15 @@
-<p>table works</p>
+<table class="table table-secondary">
+    <tr>
+        <th>pos.</th>
+        <th>Club</th>
+        <th>GD</th>
+        <th>Points</th>
+    </tr>
+    <tr *ngFor="let team of table; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{team.name}}</td>
+        <td>{{team.GD}}</td>
+        <td>{{team.points}}</td>
+    </tr>
+</table>
+
